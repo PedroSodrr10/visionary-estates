@@ -11,7 +11,7 @@ const HeroSection = () => {
       />
       <div className="absolute inset-0 overlay-dark" />
 
-      <nav className="absolute top-0 left-0 right-0 z-20 flex items-center justify-between px-8 py-6 md:px-16">
+      <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-8 py-6 md:px-16 bg-background/80 backdrop-blur-md border-b border-border/50">
         <div className="font-display text-2xl font-bold tracking-wider text-foreground">
           TE <span className="text-gradient-accent">Propriedades</span>
         </div>
