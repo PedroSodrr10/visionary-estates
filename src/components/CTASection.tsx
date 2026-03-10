@@ -23,14 +23,14 @@ const CTASection = () => {
           <h2 className="mb-6 font-display text-3xl font-bold text-foreground md:text-5xl">
             Construa seu
             <br />
-            <span className="text-gradient-gold">Patrimônio</span>
+            <span className="text-gradient-accent">Patrimônio</span>
           </h2>
           <p className="mb-10 font-body text-base font-light text-muted-foreground">
             Entre em contato e descubra como a TE Propriedades pode transformar sua visão em resultados sólidos.
           </p>
           <a
             href="mailto:contato@tepropriedades.com.br"
-            className="inline-block border border-gold px-10 py-4 font-body text-sm uppercase tracking-widest text-primary transition-all hover:bg-primary hover:text-primary-foreground"
+            className="inline-block border border-accent px-10 py-4 font-body text-sm uppercase tracking-widest text-primary transition-all hover:bg-primary hover:text-primary-foreground"
           >
             Iniciar Conversa
           </a>

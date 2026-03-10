@@ -60,7 +60,7 @@ const DifferentialsSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: i * 0.15 }}
-              className="group border border-border bg-card/50 p-8 backdrop-blur-sm transition-all hover:border-primary/30 hover:shadow-gold"
+              className="group border border-border bg-card/50 p-8 backdrop-blur-sm transition-all hover:border-primary/30 hover:shadow-accent"
             >
               <item.icon className="mb-5 h-8 w-8 text-primary" />
               <h3 className="mb-3 font-display text-lg font-semibold text-foreground">

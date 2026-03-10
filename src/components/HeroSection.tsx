@@ -13,7 +13,7 @@ const HeroSection = () => {
 
       <nav className="absolute top-0 left-0 right-0 z-20 flex items-center justify-between px-8 py-6 md:px-16">
         <div className="font-display text-2xl font-bold tracking-wider text-foreground">
-          TE <span className="text-gradient-gold">Propriedades</span>
+          TE <span className="text-gradient-accent">Propriedades</span>
         </div>
         <div className="hidden gap-8 font-body text-sm tracking-widest uppercase md:flex">
           <a href="#sobre" className="text-muted-foreground transition-colors hover:text-primary">Sobre</a>
@@ -34,14 +34,14 @@ const HeroSection = () => {
           <h1 className="mb-6 font-display text-4xl font-bold leading-tight tracking-tight text-foreground md:text-6xl lg:text-7xl">
             Patrimônio com
             <br />
-            <span className="text-gradient-gold">Visão Estratégica</span>
+            <span className="text-gradient-accent">Visão Estratégica</span>
           </h1>
           <p className="mb-10 max-w-lg font-body text-lg font-light leading-relaxed text-muted-foreground">
             Planejamento imobiliário de alto padrão para quem busca solidez, rentabilidade e sofisticação.
           </p>
           <a
             href="#contato"
-            className="inline-block border border-gold px-8 py-3 font-body text-sm uppercase tracking-widest text-primary transition-all hover:bg-primary hover:text-primary-foreground"
+            className="inline-block border border-accent px-8 py-3 font-body text-sm uppercase tracking-widest text-primary transition-all hover:bg-primary hover:text-primary-foreground"
           >
             Fale Conosco
           </a>
