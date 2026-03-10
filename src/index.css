@@ -41,8 +41,8 @@
 
     --overlay-dark: linear-gradient(180deg, hsla(0, 0%, 2%, 0.7) 0%, hsla(0, 0%, 2%, 0.9) 100%);
     --overlay-left: linear-gradient(90deg, hsla(0, 0%, 2%, 0.95) 0%, hsla(0, 0%, 2%, 0.3) 100%);
-    --gradient-accent: linear-gradient(135deg, hsl(100, 90%, 43%) 0%, hsl(100, 70%, 35%) 100%);
-    --shadow-accent: 0 4px 30px hsla(100, 90%, 43%, 0.15);
+    --gradient-accent: linear-gradient(135deg, hsl(207, 10%, 68%) 0%, hsl(207, 15%, 55%) 100%);
+    --shadow-accent: 0 4px 30px hsla(207, 10%, 68%, 0.15);
   }
 }
 
