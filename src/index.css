@@ -6,43 +6,43 @@
 
 @layer base {
   :root {
-    --background: 220 20% 7%;
-    --foreground: 210 20% 92%;
+    --background: 0 0% 4%;
+    --foreground: 0 0% 100%;
 
-    --card: 220 18% 10%;
-    --card-foreground: 210 20% 92%;
+    --card: 0 0% 6%;
+    --card-foreground: 0 0% 100%;
 
-    --popover: 220 18% 10%;
-    --popover-foreground: 210 20% 92%;
+    --popover: 0 0% 6%;
+    --popover-foreground: 0 0% 100%;
 
-    --primary: 40 60% 55%;
-    --primary-foreground: 220 20% 7%;
+    --primary: 100 90% 43%;
+    --primary-foreground: 0 0% 4%;
 
-    --secondary: 215 15% 18%;
-    --secondary-foreground: 210 20% 85%;
+    --secondary: 207 15% 26%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 215 12% 15%;
-    --muted-foreground: 215 10% 55%;
+    --muted: 207 10% 20%;
+    --muted-foreground: 0 0% 65%;
 
-    --accent: 40 50% 45%;
-    --accent-foreground: 220 20% 7%;
+    --accent: 207 15% 26%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 215 15% 18%;
-    --input: 215 15% 18%;
-    --ring: 40 60% 55%;
+    --border: 207 10% 20%;
+    --input: 207 10% 20%;
+    --ring: 100 90% 43%;
 
     --radius: 0.25rem;
 
     --font-display: 'Playfair Display', serif;
     --font-body: 'Inter', sans-serif;
 
-    --overlay-dark: linear-gradient(180deg, hsla(220, 20%, 5%, 0.7) 0%, hsla(220, 20%, 5%, 0.9) 100%);
-    --overlay-left: linear-gradient(90deg, hsla(220, 20%, 5%, 0.95) 0%, hsla(220, 20%, 5%, 0.3) 100%);
-    --gradient-gold: linear-gradient(135deg, hsl(40, 60%, 55%) 0%, hsl(35, 50%, 40%) 100%);
-    --shadow-gold: 0 4px 30px hsla(40, 60%, 55%, 0.15);
+    --overlay-dark: linear-gradient(180deg, hsla(0, 0%, 2%, 0.7) 0%, hsla(0, 0%, 2%, 0.9) 100%);
+    --overlay-left: linear-gradient(90deg, hsla(0, 0%, 2%, 0.95) 0%, hsla(0, 0%, 2%, 0.3) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(100, 90%, 43%) 0%, hsl(100, 70%, 35%) 100%);
+    --shadow-accent: 0 4px 30px hsla(100, 90%, 43%, 0.15);
   }
 }
 
