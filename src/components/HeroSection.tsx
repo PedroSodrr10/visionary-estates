@@ -34,7 +34,7 @@ const HeroSection = () => {
           <h1 className="mb-6 font-display text-4xl font-bold leading-tight tracking-tight text-foreground md:text-6xl lg:text-7xl">
             Patrimônio com
             <br />
-            <span className="text-gradient-gold">Visão Estratégica</span>
+            <span className="text-gradient-accent">Visão Estratégica</span>
           </h1>
           <p className="mb-10 max-w-lg font-body text-lg font-light leading-relaxed text-muted-foreground">
             Planejamento imobiliário de alto padrão para quem busca solidez, rentabilidade e sofisticação.
