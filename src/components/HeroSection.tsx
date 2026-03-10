@@ -13,7 +13,7 @@ const HeroSection = () => {
 
       <nav className="absolute top-0 left-0 right-0 z-20 flex items-center justify-between px-8 py-6 md:px-16">
         <div className="font-display text-2xl font-bold tracking-wider text-foreground">
-          TE <span className="text-gradient-gold">Propriedades</span>
+          TE <span className="text-gradient-accent">Propriedades</span>
         </div>
         <div className="hidden gap-8 font-body text-sm tracking-widest uppercase md:flex">
           <a href="#sobre" className="text-muted-foreground transition-colors hover:text-primary">Sobre</a>
