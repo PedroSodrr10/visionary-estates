@@ -30,7 +30,7 @@ const CTASection = () => {
           </p>
           <a
             href="mailto:contato@tepropriedades.com.br"
-            className="inline-block border border-gold px-10 py-4 font-body text-sm uppercase tracking-widest text-primary transition-all hover:bg-primary hover:text-primary-foreground"
+            className="inline-block border border-accent px-10 py-4 font-body text-sm uppercase tracking-widest text-primary transition-all hover:bg-primary hover:text-primary-foreground"
           >
             Iniciar Conversa
           </a>

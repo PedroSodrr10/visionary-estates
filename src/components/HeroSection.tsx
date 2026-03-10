@@ -41,7 +41,7 @@ const HeroSection = () => {
           </p>
           <a
             href="#contato"
-            className="inline-block border border-gold px-8 py-3 font-body text-sm uppercase tracking-widest text-primary transition-all hover:bg-primary hover:text-primary-foreground"
+            className="inline-block border border-accent px-8 py-3 font-body text-sm uppercase tracking-widest text-primary transition-all hover:bg-primary hover:text-primary-foreground"
           >
             Fale Conosco
           </a>
