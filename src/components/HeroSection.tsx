@@ -16,9 +16,10 @@ const HeroSection = () => {
           TE <span className="text-gradient-accent">Propriedades</span>
         </div>
         <div className="hidden gap-8 font-body text-sm tracking-widest uppercase md:flex">
-          <a href="#sobre" className="text-muted-foreground transition-colors hover:text-primary">Sobre</a>
-          <a href="#diferenciais" className="text-muted-foreground transition-colors hover:text-primary">Diferenciais</a>
-          <a href="#metodo" className="text-muted-foreground transition-colors hover:text-primary">Método</a>
+          <a href="#missao" className="text-muted-foreground transition-colors hover:text-primary">Missão</a>
+          <a href="#principios" className="text-muted-foreground transition-colors hover:text-primary">Princípios</a>
+          <a href="#framework" className="text-muted-foreground transition-colors hover:text-primary">Framework</a>
+          <a href="#tese" className="text-muted-foreground transition-colors hover:text-primary">Tese</a>
           <a href="#contato" className="text-muted-foreground transition-colors hover:text-primary">Contato</a>
         </div>
       </nav>
@@ -32,18 +33,18 @@ const HeroSection = () => {
         >
           <div className="mb-4 h-px w-16 bg-primary" />
           <h1 className="mb-6 font-display text-4xl font-bold leading-tight tracking-tight text-foreground md:text-6xl lg:text-7xl">
-            Patrimônio com
+            Estrutura que
             <br />
-            <span className="text-gradient-accent">Visão Estratégica</span>
+            <span className="text-gradient-accent">atravessa o ciclo</span>
           </h1>
           <p className="mb-10 max-w-lg font-body text-lg font-light leading-relaxed text-muted-foreground">
-            Planejamento imobiliário de alto padrão para quem busca solidez, rentabilidade e sofisticação.
+            Em um mercado movido por narrativas, a TE nasceu para escutar o que o mercado realmente absorve — e estruturar o caminho entre capital e retorno com lógica, não com opinião.
           </p>
           <a
             href="#contato"
             className="inline-block border border-accent px-8 py-3 font-body text-sm uppercase tracking-widest text-primary transition-all hover:bg-primary hover:text-primary-foreground"
           >
-            Fale Conosco
+            Iniciar Conversa
           </a>
         </motion.div>
       </div>
