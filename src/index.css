@@ -36,8 +36,8 @@
 
     --radius: 0.25rem;
 
-    --font-display: 'Playfair Display', serif;
-    --font-body: 'Inter', sans-serif;
+    --font-display: 'Bai Jamjuree', sans-serif;
+    --font-body: 'DM Sans', sans-serif;
 
     --overlay-dark: linear-gradient(180deg, hsla(0, 0%, 2%, 0.7) 0%, hsla(0, 0%, 2%, 0.9) 100%);
     --overlay-left: linear-gradient(90deg, hsla(0, 0%, 2%, 0.95) 0%, hsla(0, 0%, 2%, 0.3) 100%);
