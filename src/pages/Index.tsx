@@ -1,7 +1,8 @@
 import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
-import DifferentialsSection from "@/components/DifferentialsSection";
+import PrinciplesSection from "@/components/PrinciplesSection";
 import MethodSection from "@/components/MethodSection";
+import ThesisSection from "@/components/ThesisSection";
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
 
@@ -10,8 +11,9 @@ const Index = () => {
     <main className="bg-background">
       <HeroSection />
       <AboutSection />
-      <DifferentialsSection />
+      <PrinciplesSection />
       <MethodSection />
+      <ThesisSection />
       <CTASection />
       <Footer />
     </main>

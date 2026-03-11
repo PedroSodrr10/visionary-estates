@@ -21,12 +21,12 @@ const CTASection = () => {
         >
           <div className="mx-auto mb-4 h-px w-12 bg-primary" />
           <h2 className="mb-6 font-display text-3xl font-bold text-foreground md:text-5xl">
-            Construa seu
+            Nosso trabalho não é
             <br />
-            <span className="text-gradient-accent">Patrimônio</span>
+            <span className="text-gradient-accent">acelerar ciclos</span>
           </h2>
           <p className="mb-10 font-body text-base font-light text-muted-foreground">
-            Entre em contato e descubra como a TE Propriedades pode transformar sua visão em resultados sólidos.
+            É construir margens. É proteger patrimônio. Se o objetivo é preservar, multiplicar e sair com controle, a TE é a estrutura que organiza esse caminho.
           </p>
           <a
             href="mailto:contato@tepropriedades.com.br"
