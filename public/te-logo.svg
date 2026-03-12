@@ -1,0 +1,13 @@
+<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <g fill="none" stroke="#ffffff" stroke-width="7.5" stroke-linecap="square">
+    <!-- T -->
+    <line x1="50" y1="62" x2="246" y2="62" />
+    <line x1="96" y1="62" x2="96" y2="152" />
+    
+    <!-- E -->
+    <line x1="158" y1="17" x2="158" y2="107" />
+    <line x1="158" y1="17" x2="246" y2="17" />
+    <line x1="158" y1="62" x2="246" y2="62" />
+    <line x1="158" y1="107" x2="246" y2="107" />
+  </g>
+</svg>
