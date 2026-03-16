@@ -30,20 +30,34 @@ const HeroSection = () => {
           transition={{ duration: 1, ease: "easeOut" }}
           className="max-w-2xl"
         >
-          <div className="mb-4 h-px w-16 bg-primary" />
-          <h1 className="mb-6 font-display text-4xl font-bold leading-tight tracking-tight text-foreground md:text-6xl lg:text-7xl">
-            Estrutura que
+          {/* 45° angled separator */}
+          <div className="mb-6 flex items-center gap-3">
+            <div className="h-px w-12 bg-primary origin-left rotate-[-10deg]" />
+            <span className="font-body text-[10px] uppercase tracking-[0.4em] text-primary/70">
+              Técnica · Estratégia · Execução
+            </span>
+          </div>
+
+          <h1 className="mb-4 font-display text-4xl font-bold leading-tight tracking-tight text-foreground md:text-6xl lg:text-7xl">
+            Investir com critério
             <br />
-            <span className="text-gradient-accent">atravessa o ciclo</span>
+            <span className="text-gradient-accent">é investir com segurança</span>
           </h1>
-          <p className="mb-10 max-w-lg font-body text-lg font-light leading-relaxed text-muted-foreground">
-            Em um mercado movido por narrativas, a TE nasceu para escutar o que o mercado realmente absorve — e estruturar o caminho entre capital e retorno com lógica, não com opinião.
+
+          <p className="mb-4 max-w-lg font-display text-lg font-medium text-primary md:text-xl">
+            Cada imóvel tem um caminho. Nós mapeamos o seu.
           </p>
+
+          <p className="mb-10 max-w-lg font-body text-base font-light leading-relaxed text-muted-foreground">
+            Transformamos imóveis em estratégia patrimonial real — com técnica, compromisso e bagagem de tempo.
+          </p>
+
           <a
             href="#contato"
-            className="inline-block border border-accent px-8 py-3 font-body text-sm uppercase tracking-widest text-primary transition-all hover:bg-primary hover:text-primary-foreground"
+            className="inline-flex items-center gap-3 border border-accent px-8 py-3 font-body text-sm uppercase tracking-widest text-primary transition-all hover:bg-primary hover:text-primary-foreground"
           >
-            Iniciar Conversa
+            <span>Iniciar Conversa</span>
+            <div className="h-px w-4 bg-current rotate-[-45deg]" />
           </a>
         </motion.div>
       </div>

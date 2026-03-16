@@ -4,28 +4,28 @@ import methodImg from "@/assets/method-planning.jpg";
 const steps = [
   {
     number: "01",
-    title: "Diagnóstico Silencioso",
-    description: "Escuta técnica que identifica assimetrias de tempo, capital e demanda. Somente entra no pipeline o que possui justificativa objetiva de entrada, racionalidade de saída e margem possível.",
+    title: "Diagnóstico Técnico",
+    description: "Análise objetiva de tempo, capital e demanda. Só entra no pipeline o que possui justificativa de entrada, rota de saída e margem defensável.",
   },
   {
     number: "02",
     title: "Engenharia de Estrutura",
-    description: "Travamento de risco com blindagem jurídica, alocação proporcional com capital segregado e gatilhos de desmobilização. O risco existe, mas está travado.",
+    description: "Travamento de risco com blindagem jurídica, alocação proporcional com capital segregado e gatilhos de desmobilização definidos.",
   },
   {
     number: "03",
     title: "Curadoria e Margem",
-    description: "Só se avança no que resiste ao ciclo. Liquidez real como condição de entrada, margem defensável antes da comercialização e exclusão radical de produtos sem tese de absorção.",
+    description: "Liquidez real como condição de entrada. Margem defensável antes da comercialização. Exclusão de produtos sem tese de absorção comprovada.",
   },
   {
     number: "04",
     title: "Execução com Precisão",
-    description: "Operação com invisibilidade operacional. Controle integral de exposição e tempo. Governança como eficiência. Cada movimento responde a premissas estruturadas.",
+    description: "Controle integral de exposição e tempo. Governança como eficiência decisória. Cada movimento responde a premissas estruturadas.",
   },
   {
     number: "05",
     title: "Saída Planejada",
-    description: "O lucro não é surpresa: é consequência lógica da estrutura. Retorno líquido ao investidor, preservação de patrimônio e recorrência de performance pelo modelo — não por sorte.",
+    description: "Retorno líquido ao investidor, preservação de patrimônio e recorrência de performance pelo modelo — não por sorte. O lucro é consequência da estrutura.",
   },
 ];
 
@@ -40,17 +40,20 @@ const MethodSection = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <div className="mb-4 h-px w-12 bg-primary" />
+            <div className="mb-4 flex items-center gap-2">
+              <div className="h-px w-8 bg-primary rotate-[-45deg] origin-left" />
+              <div className="h-px w-8 bg-primary" />
+            </div>
             <p className="mb-3 font-body text-xs uppercase tracking-[0.3em] text-primary">
               Framework Operacional
             </p>
             <h2 className="mb-4 font-display text-3xl font-bold text-foreground md:text-4xl">
-              A Estrutura Invisível
+              A forma segue
               <br />
-              da Decisão Patrimonial
+              a função
             </h2>
             <p className="mb-10 font-body text-sm font-light text-muted-foreground">
-              Um sistema de decisão embasado em racionalidade silenciosa, escuta técnica e estrutura invisível.
+              Um sistema de decisão objetivo, construído sobre critério técnico e senioridade operacional.
             </p>
 
             <div className="space-y-8">
@@ -63,10 +66,15 @@ const MethodSection = () => {
                   transition={{ duration: 0.5, delay: i * 0.12 }}
                   className="flex gap-6"
                 >
-                  <span className="font-display text-3xl font-bold text-primary/30">
-                    {step.number}
-                  </span>
-                  <div>
+                  <div className="flex flex-col items-center">
+                    <span className="font-display text-2xl font-bold text-primary/30">
+                      {step.number}
+                    </span>
+                    {i < steps.length - 1 && (
+                      <div className="mt-2 h-full w-px bg-border" />
+                    )}
+                  </div>
+                  <div className="pb-2">
                     <h3 className="mb-1 font-display text-lg font-semibold text-foreground">
                       {step.title}
                     </h3>
@@ -92,6 +100,15 @@ const MethodSection = () => {
               className="h-[600px] w-full object-cover"
             />
             <div className="absolute inset-0 bg-background/10" />
+            {/* 45° corner accents */}
+            <div className="absolute top-0 right-0 w-20 h-20">
+              <div className="absolute top-6 right-6 w-10 h-px bg-primary rotate-[45deg]" />
+              <div className="absolute top-6 right-6 w-px h-10 bg-primary" />
+            </div>
+            <div className="absolute bottom-0 left-0 w-20 h-20">
+              <div className="absolute bottom-6 left-6 w-10 h-px bg-primary rotate-[45deg]" />
+              <div className="absolute bottom-6 left-6 w-px h-10 bg-primary" />
+            </div>
           </motion.div>
         </div>
       </div>
