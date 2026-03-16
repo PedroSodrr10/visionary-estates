@@ -4,7 +4,7 @@ import diffImg from "@/assets/differentials-abstract.jpg";
 const pillars = [
   {
     title: "Estrutura acima da Estética",
-    description: "Não nos expomos para agradar. Estruturamos para proteger o capital — e só operamos onde o racional resiste à luz do dia.",
+    description: "Estruturamos para proteger o capital — e só operamos onde o racional resiste à análise objetiva. Sem exposição desnecessária.",
   },
   {
     title: "Capital como Responsabilidade",
@@ -12,11 +12,11 @@ const pillars = [
   },
   {
     title: "Lucro Real, Não Narrativo",
-    description: "A única métrica que importa é o que retorna à conta bancária do investidor. Selic + prêmio de risco. Com proteção. Sem maquiagem.",
+    description: "A única métrica que importa é o que retorna à conta do investidor. Selic + prêmio de risco. Com proteção. Sem maquiagem.",
   },
   {
     title: "Tempo como Ativo Estruturante",
-    description: "Não vendemos velocidade. Vendemos clareza. Sabemos quando entrar, e principalmente: sabemos quando não.",
+    description: "Não vendemos velocidade. Vendemos clareza. Sabemos quando entrar, e principalmente: sabemos quando não. Bagagem de tempo é vantagem.",
   },
 ];
 
@@ -38,7 +38,10 @@ const ThesisSection = () => {
           transition={{ duration: 0.8 }}
           className="mb-6 max-w-2xl"
         >
-          <div className="mb-4 h-px w-12 bg-primary" />
+          <div className="mb-4 flex items-center gap-2">
+            <div className="h-px w-8 bg-primary rotate-[-45deg] origin-left" />
+            <div className="h-px w-8 bg-primary" />
+          </div>
           <p className="mb-3 font-body text-xs uppercase tracking-[0.3em] text-primary">
             Tese de Investimento
           </p>
@@ -46,7 +49,7 @@ const ThesisSection = () => {
             A Estrutura Precede o Lucro
           </h2>
           <p className="font-body text-base font-light leading-relaxed text-muted-foreground">
-            A TE não desenvolve empreendimentos. Ela desenha estruturas onde o capital pode se multiplicar com margem, liquidez e clareza. Nossa tese lê o real com precisão clínica, atua apenas onde há assimetria a favor do investidor.
+            A TE não desenvolve empreendimentos. Ela desenha estruturas onde o capital se multiplica com margem, liquidez e clareza. Nossa tese atua apenas onde há assimetria a favor do investidor.
           </p>
         </motion.div>
 
@@ -58,7 +61,7 @@ const ThesisSection = () => {
           className="mb-16 max-w-2xl"
         >
           <p className="font-body text-sm font-light leading-relaxed text-muted-foreground">
-            O mercado está cheio de produtos, mas vazio de diagnóstico. Não prometemos imóveis — entregamos operações com entrada justificada, retorno projetável e saída possível, mesmo em cenário adverso. A margem nasce antes do lançamento, não depois da venda.
+            O mercado está cheio de produtos, mas vazio de diagnóstico. Entregamos operações com entrada justificada, retorno projetável e saída possível, mesmo em cenário adverso. A margem nasce antes do lançamento, não depois da venda.
           </p>
         </motion.div>
 
@@ -70,8 +73,12 @@ const ThesisSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: i * 0.12 }}
-              className="border border-border bg-card/50 p-8 backdrop-blur-sm transition-all hover:border-primary/30 hover:shadow-accent"
+              className="relative border border-border bg-card/50 p-8 backdrop-blur-sm transition-all hover:border-primary/30 hover:shadow-accent"
             >
+              {/* 45° corner detail */}
+              <div className="absolute top-0 right-0 w-6 h-6 overflow-hidden">
+                <div className="absolute top-0 right-0 w-8 h-px bg-primary/30 rotate-[-45deg] origin-top-right" />
+              </div>
               <span className="mb-4 block font-display text-2xl font-bold text-primary/30">
                 {String(i + 1).padStart(2, "0")}
               </span>
@@ -93,7 +100,7 @@ const ThesisSection = () => {
           className="mt-16 max-w-2xl border-l-2 border-primary/20 pl-6"
         >
           <p className="font-body text-sm font-light italic leading-relaxed text-muted-foreground">
-            Essa tese serve a quem sabe que capital não se expõe onde há ruído. A quem prefere 3 negócios bem feitos a 30 feitos às pressas. A quem busca retorno real com estrutura técnica, não promessas.
+            Essa tese serve a quem sabe que capital não se expõe onde há ruído. A quem prefere 3 negócios bem estruturados a 30 feitos às pressas. A quem busca retorno real com critério técnico, não promessas.
           </p>
         </motion.div>
       </div>

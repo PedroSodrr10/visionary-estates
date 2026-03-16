@@ -50,12 +50,12 @@ const principles = [
   {
     id: "09",
     title: "Técnica Invisível como Vantagem Estrutural",
-    summary: "Diagnóstico silencioso, engenharia de estruturação e capacidade de escutar o real sem se distrair com euforia de mercado. É nela que o retorno nasce.",
+    summary: "Diagnóstico técnico, engenharia de estruturação e capacidade de ler o mercado sem se distrair com euforia. É nela que o retorno nasce.",
   },
   {
     id: "10",
     title: "O Valor Real Está Onde o Ruído Não Chega",
-    summary: "A TE opera com escuta radical. Lê o que o mercado quer absorver — e estrutura o caminho até lá com controle. O plano sobrevive porque nasce do real.",
+    summary: "A TE opera com escuta objetiva. Lê o que o mercado absorve — e estrutura o caminho até lá com controle. O plano sobrevive porque nasce do real.",
   },
 ];
 
@@ -70,7 +70,10 @@ const PrinciplesSection = () => {
           transition={{ duration: 0.8 }}
           className="mb-16 max-w-2xl"
         >
-          <div className="mb-4 h-px w-12 bg-primary" />
+          <div className="mb-4 flex items-center gap-2">
+            <div className="h-px w-8 bg-primary rotate-[-45deg] origin-left" />
+            <div className="h-px w-8 bg-primary" />
+          </div>
           <p className="mb-3 font-body text-xs uppercase tracking-[0.3em] text-primary">
             Princípios Inegociáveis
           </p>
@@ -78,7 +81,7 @@ const PrinciplesSection = () => {
             O que nos governa
           </h2>
           <p className="font-body text-base font-light text-muted-foreground">
-            A TE não opera para impressionar. Opera para preservar, multiplicar e entregar. Não disputa o palco — disputa o resultado.
+            A TE não opera para impressionar. Opera para preservar, multiplicar e entregar com critério.
           </p>
         </motion.div>
 
