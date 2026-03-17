@@ -70,10 +70,7 @@ const PrinciplesSection = () => {
           transition={{ duration: 0.8 }}
           className="mb-16 max-w-2xl"
         >
-          <div className="mb-4 flex items-center gap-2">
-            <div className="h-px w-8 bg-primary rotate-[-45deg] origin-left" />
-            <div className="h-px w-8 bg-primary" />
-          </div>
+          <div className="mb-4 h-px w-12 bg-primary" />
           <p className="mb-3 font-body text-xs uppercase tracking-[0.3em] text-primary">
             Princípios Inegociáveis
           </p>

@@ -30,9 +30,8 @@ const HeroSection = () => {
           transition={{ duration: 1, ease: "easeOut" }}
           className="max-w-2xl"
         >
-          {/* 45° angled separator */}
           <div className="mb-6 flex items-center gap-3">
-            <div className="h-px w-12 bg-primary origin-left rotate-[-10deg]" />
+            <div className="h-px w-12 bg-primary" />
             <span className="font-body text-[10px] uppercase tracking-[0.4em] text-primary/70">
               Técnica · Estratégia · Execução
             </span>
@@ -54,10 +53,9 @@ const HeroSection = () => {
 
           <a
             href="#contato"
-            className="inline-flex items-center gap-3 border border-accent px-8 py-3 font-body text-sm uppercase tracking-widest text-primary transition-all hover:bg-primary hover:text-primary-foreground"
+            className="inline-block border border-accent px-8 py-3 font-body text-sm uppercase tracking-widest text-primary transition-all hover:bg-primary hover:text-primary-foreground"
           >
-            <span>Iniciar Conversa</span>
-            <div className="h-px w-4 bg-current rotate-[-45deg]" />
+            Iniciar Conversa
           </a>
         </motion.div>
       </div>

@@ -12,11 +12,7 @@ const AboutSection = () => {
           transition={{ duration: 0.8 }}
           className="mb-16 text-center"
         >
-          <div className="mx-auto mb-4 flex items-center justify-center gap-3">
-            <div className="h-px w-8 bg-primary rotate-[-45deg]" />
-            <div className="h-px w-8 bg-primary" />
-            <div className="h-px w-8 bg-primary rotate-[45deg]" />
-          </div>
+          <div className="mx-auto mb-4 h-px w-12 bg-primary" />
           <p className="mb-3 font-body text-xs uppercase tracking-[0.3em] text-primary">
             Quem somos
           </p>
@@ -41,17 +37,13 @@ const AboutSection = () => {
                 A gente entrega o que faz sentido: técnica e compromisso.
               </p>
             </div>
-            <div className="relative overflow-hidden">
+            <div className="relative overflow-hidden" style={{ clipPath: 'polygon(0 0, 100% 0, 100% calc(100% - 40px), calc(100% - 40px) 100%, 0 100%)' }}>
               <img
                 src={aboutImg}
                 alt="Arquitetura moderna em vidro com linhas geométricas"
                 className="h-[350px] w-full object-cover"
               />
               <div className="absolute inset-0 bg-background/20" />
-              {/* 45° corner accent */}
-              <div className="absolute top-0 left-0 w-16 h-16">
-                <div className="absolute top-4 left-4 w-8 h-px bg-primary rotate-[-45deg] origin-left" />
-              </div>
             </div>
           </motion.div>
 
@@ -70,21 +62,21 @@ const AboutSection = () => {
                 Liquidez começa no planejamento.
               </p>
             </div>
-            <div className="border border-border bg-card/50 p-8">
+            <div className="border border-border bg-card/50 p-8" style={{ clipPath: 'polygon(40px 0, 100% 0, 100% 100%, 0 100%, 0 40px)' }}>
               <p className="mb-4 font-body text-sm font-light italic leading-relaxed text-muted-foreground">
                 "Não buscamos escala, visibilidade ou protagonismo de mercado. Somos método, não estética. Somos estrutura, não símbolo. É por isso que atravessamos o tempo."
               </p>
               <div className="mt-6 space-y-3">
                 <div className="flex items-center gap-3">
-                  <div className="h-px w-6 bg-primary/50 rotate-[-45deg]" />
+                  <div className="h-px w-6 bg-primary/50" />
                   <span className="font-body text-xs uppercase tracking-widest text-primary">Resultado, não vaidade</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <div className="h-px w-6 bg-primary/50 rotate-[-45deg]" />
+                  <div className="h-px w-6 bg-primary/50" />
                   <span className="font-body text-xs uppercase tracking-widest text-primary">Coerência acima de performance</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <div className="h-px w-6 bg-primary/50 rotate-[-45deg]" />
+                  <div className="h-px w-6 bg-primary/50" />
                   <span className="font-body text-xs uppercase tracking-widest text-primary">Retorno líquido, não narrativa</span>
                 </div>
               </div>

@@ -40,10 +40,7 @@ const MethodSection = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <div className="mb-4 flex items-center gap-2">
-              <div className="h-px w-8 bg-primary rotate-[-45deg] origin-left" />
-              <div className="h-px w-8 bg-primary" />
-            </div>
+            <div className="mb-4 h-px w-12 bg-primary" />
             <p className="mb-3 font-body text-xs uppercase tracking-[0.3em] text-primary">
               Framework Operacional
             </p>
@@ -94,20 +91,13 @@ const MethodSection = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="relative hidden md:block"
           >
-            <img
-              src={methodImg}
-              alt="Blueprint arquitetônico sobre paisagem urbana"
-              className="h-[600px] w-full object-cover"
-            />
-            <div className="absolute inset-0 bg-background/10" />
-            {/* 45° corner accents */}
-            <div className="absolute top-0 right-0 w-20 h-20">
-              <div className="absolute top-6 right-6 w-10 h-px bg-primary rotate-[45deg]" />
-              <div className="absolute top-6 right-6 w-px h-10 bg-primary" />
-            </div>
-            <div className="absolute bottom-0 left-0 w-20 h-20">
-              <div className="absolute bottom-6 left-6 w-10 h-px bg-primary rotate-[45deg]" />
-              <div className="absolute bottom-6 left-6 w-px h-10 bg-primary" />
+            <div style={{ clipPath: 'polygon(0 0, 100% 0, 100% calc(100% - 60px), calc(100% - 60px) 100%, 0 100%)' }}>
+              <img
+                src={methodImg}
+                alt="Blueprint arquitetônico sobre paisagem urbana"
+                className="h-[600px] w-full object-cover"
+              />
+              <div className="absolute inset-0 bg-background/10" />
             </div>
           </motion.div>
         </div>

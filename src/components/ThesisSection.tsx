@@ -38,10 +38,7 @@ const ThesisSection = () => {
           transition={{ duration: 0.8 }}
           className="mb-6 max-w-2xl"
         >
-          <div className="mb-4 flex items-center gap-2">
-            <div className="h-px w-8 bg-primary rotate-[-45deg] origin-left" />
-            <div className="h-px w-8 bg-primary" />
-          </div>
+          <div className="mb-4 h-px w-12 bg-primary" />
           <p className="mb-3 font-body text-xs uppercase tracking-[0.3em] text-primary">
             Tese de Investimento
           </p>
@@ -73,12 +70,9 @@ const ThesisSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: i * 0.12 }}
-              className="relative border border-border bg-card/50 p-8 backdrop-blur-sm transition-all hover:border-primary/30 hover:shadow-accent"
+              className="border border-border bg-card/50 p-8 backdrop-blur-sm transition-all hover:border-primary/30 hover:shadow-accent"
+              style={{ clipPath: 'polygon(0 0, 100% 0, 100% calc(100% - 24px), calc(100% - 24px) 100%, 0 100%)' }}
             >
-              {/* 45° corner detail */}
-              <div className="absolute top-0 right-0 w-6 h-6 overflow-hidden">
-                <div className="absolute top-0 right-0 w-8 h-px bg-primary/30 rotate-[-45deg] origin-top-right" />
-              </div>
               <span className="mb-4 block font-display text-2xl font-bold text-primary/30">
                 {String(i + 1).padStart(2, "0")}
               </span>
