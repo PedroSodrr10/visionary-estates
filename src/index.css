@@ -78,14 +78,4 @@
   .shadow-accent {
     box-shadow: var(--shadow-accent);
   }
-  .separator-45 {
-    width: 48px;
-    height: 2px;
-    background: hsl(var(--primary));
-    transform: rotate(-45deg);
-    transform-origin: left center;
-  }
-  .line-rational {
-    background: linear-gradient(135deg, hsl(var(--primary)) 0%, transparent 100%);
-  }
 }

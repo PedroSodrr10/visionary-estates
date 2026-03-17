@@ -19,11 +19,7 @@ const CTASection = () => {
           transition={{ duration: 0.8 }}
           className="max-w-xl"
         >
-          <div className="mx-auto mb-4 flex items-center justify-center gap-2">
-            <div className="h-px w-6 bg-primary rotate-[-45deg]" />
-            <div className="h-px w-10 bg-primary" />
-            <div className="h-px w-6 bg-primary rotate-[45deg]" />
-          </div>
+          <div className="mx-auto mb-4 h-px w-12 bg-primary" />
           <h2 className="mb-4 font-display text-3xl font-bold text-foreground md:text-5xl">
             Transformando imóveis em
             <br />
@@ -34,10 +30,9 @@ const CTASection = () => {
           </p>
           <a
             href="mailto:contato@tepropriedades.com.br"
-            className="inline-flex items-center gap-3 border border-accent px-10 py-4 font-body text-sm uppercase tracking-widest text-primary transition-all hover:bg-primary hover:text-primary-foreground"
+            className="inline-block border border-accent px-10 py-4 font-body text-sm uppercase tracking-widest text-primary transition-all hover:bg-primary hover:text-primary-foreground"
           >
-            <span>Iniciar Conversa</span>
-            <div className="h-px w-4 bg-current rotate-[-45deg]" />
+            Iniciar Conversa
           </a>
         </motion.div>
       </div>
