@@ -23,14 +23,14 @@ const CTASection = () => {
           <h2 className="mb-4 font-display text-3xl font-bold text-foreground md:text-5xl">
             Transformando imóveis em
             <br />
-            <span className="text-gradient-accent">estratégia patrimonial real</span>
+            <span className="text-primary md:text-gradient-accent">estratégia patrimonial real</span>
           </h2>
-          <p className="mb-10 font-body text-base font-light text-muted-foreground">
+          <p className="mb-10 font-body text-base font-light text-muted-foreground/95">
             Se o objetivo é preservar, multiplicar e sair com controle, a TE é a estrutura que organiza esse caminho. Com critério, técnica e compromisso.
           </p>
           <a
             href="mailto:contato@tepropriedades.com.br"
-            className="inline-block border border-accent px-10 py-4 font-body text-sm uppercase tracking-widest text-primary transition-all hover:bg-primary hover:text-primary-foreground"
+            className="inline-block border border-primary/70 px-10 py-4 font-body text-sm uppercase tracking-widest text-foreground md:text-primary transition-all hover:bg-primary hover:text-primary-foreground"
           >
             Iniciar Conversa
           </a>

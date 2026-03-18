@@ -12,7 +12,7 @@ const HeroSection = () => {
       />
       <div className="absolute inset-0 overlay-dark" />
 
-      <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-8 py-6 md:px-16 bg-background/80 backdrop-blur-md border-b border-border/50">
+      <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-5 md:px-16 md:py-6 bg-background/55 md:bg-background/80 backdrop-blur-md border-b border-border/50">
         <TELogo className="h-12 w-auto text-foreground" />
         <div className="hidden gap-8 font-body text-sm tracking-widest uppercase md:flex">
           <a href="#missao" className="text-muted-foreground transition-colors hover:text-primary">Missão</a>
@@ -32,7 +32,7 @@ const HeroSection = () => {
         >
           <div className="mb-6 flex items-center gap-3">
             <div className="h-px w-12 bg-primary" />
-            <span className="font-body text-[10px] uppercase tracking-[0.4em] text-primary/70">
+            <span className="font-body text-[10px] uppercase tracking-[0.4em] text-primary/90">
               Técnica · Estratégia · Execução
             </span>
           </div>
@@ -40,20 +40,20 @@ const HeroSection = () => {
           <h1 className="mb-4 font-display text-4xl font-bold leading-tight tracking-tight text-foreground md:text-6xl lg:text-7xl">
             Investir com critério
             <br />
-            <span className="text-gradient-accent">é investir com segurança</span>
+            <span className="text-primary md:text-gradient-accent">é investir com segurança</span>
           </h1>
 
           <p className="mb-4 max-w-lg font-display text-lg font-medium text-primary md:text-xl">
             Cada imóvel tem um caminho. Nós mapeamos o seu.
           </p>
 
-          <p className="mb-10 max-w-lg font-body text-base font-light leading-relaxed text-muted-foreground">
+          <p className="mb-10 max-w-lg font-body text-base font-light leading-relaxed text-muted-foreground/95">
             Transformamos imóveis em estratégia patrimonial real — com técnica, compromisso e bagagem de tempo.
           </p>
 
           <a
             href="#contato"
-            className="inline-block border border-accent px-8 py-3 font-body text-sm uppercase tracking-widest text-primary transition-all hover:bg-primary hover:text-primary-foreground"
+            className="inline-block border border-primary/70 px-8 py-3 font-body text-sm uppercase tracking-widest text-foreground md:text-primary transition-all hover:bg-primary hover:text-primary-foreground"
           >
             Iniciar Conversa
           </a>
