@@ -76,56 +76,68 @@ export default function TELogo({ className = "" }: TELogoProps) {
   const propX = (T_STEM + eX) / 2;
   const propY = T_Y + 24;
 
-  // ── Polígonos com cortes 45° ─────────────────────────────────────
+  // ── Polígonos retangulares simples ─────────────────────────────────
 
-  // T crossbar: corte 45° na esquerda (/ diagonal)
-  // Top-left indentado por SW, bottom-left em T_X1
+  // T crossbar: retângulo simples
   const tCrossbar = `
-    ${T_X1 + SW},${T_Y - HW}
+    ${T_X1},${T_Y - HW}
     ${tX2},${T_Y - HW}
     ${tX2},${T_Y + HW}
     ${T_X1},${T_Y + HW}
   `;
 
-  // T stem: corte 45° na base (\ diagonal)
-  // Bottom-left desce mais, bottom-right sobe por SW
+  // T stem: retângulo simples
   const tStem = `
     ${T_STEM - HW},${T_Y - HW}
     ${T_STEM + HW},${T_Y - HW}
-    ${T_STEM + HW},${T_Y + T_H - SW}
+    ${T_STEM + HW},${T_Y + T_H}
     ${T_STEM - HW},${T_Y + T_H}
   `;
 
-  // E coluna (spine): corte 45° no topo-esquerdo e base-esquerdo
-  const eSpine = `
-    ${eX - HW + SW},${eTopY - HW}
-    ${eX + HW},${eTopY - HW}
-    ${eX + HW},${eBotY + HW}
-    ${eX - HW},${eBotY + HW - SW}
+  // 45° chamfer at T junction (inner-left corner where stem meets crossbar)
+  const tJunction45 = `
+    ${T_STEM - HW},${T_Y + HW}
+    ${T_STEM - HW - SW},${T_Y + HW}
+    ${T_STEM - HW},${T_Y + HW + SW}
   `;
 
-  // E barra topo
+  // E spine: retângulo simples
+  const eSpine = `
+    ${eX - HW},${eTopY - HW}
+    ${eX + HW},${eTopY - HW}
+    ${eX + HW},${eBotY + HW}
+    ${eX - HW},${eBotY + HW}
+  `;
+
+  // E barra topo: retângulo simples
   const eTop = `
     ${eX - HW},${eTopY - HW}
     ${eX + E_TW},${eTopY - HW}
-    ${eX + E_TW - SW},${eTopY + HW}
+    ${eX + E_TW},${eTopY + HW}
     ${eX - HW},${eTopY + HW}
   `;
 
-  // E barra meio
+  // E barra meio: retângulo simples
   const eMid = `
     ${eX - HW},${eMidY - HW}
     ${eX + E_MW},${eMidY - HW}
-    ${eX + E_MW - SW},${eMidY + HW}
+    ${eX + E_MW},${eMidY + HW}
     ${eX - HW},${eMidY + HW}
   `;
 
-  // E barra fundo
+  // E barra fundo: retângulo simples
   const eBot = `
     ${eX - HW},${eBotY - HW}
     ${eX + E_BW},${eBotY - HW}
     ${eX + E_BW},${eBotY + HW}
     ${eX - HW},${eBotY + HW}
+  `;
+
+  // 45° chamfer at E junction (inner corner where bottom bar top meets spine)
+  const eJunction45 = `
+    ${eX + HW},${eBotY - HW}
+    ${eX + HW},${eBotY - HW - SW}
+    ${eX + HW + SW},${eBotY - HW}
   `;
 
   return (
