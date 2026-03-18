@@ -151,12 +151,14 @@ export default function TELogo({ className = "" }: TELogoProps) {
         {/* ── T ── */}
         <polygon points={tCrossbar} />
         <polygon points={tStem} />
+        <polygon points={tJunction45} />
 
         {/* ── E ── */}
         <polygon points={eSpine} />
         <polygon points={eTop} />
         <polygon points={eMid} />
         <polygon points={eBot} />
+        <polygon points={eJunction45} />
       </g>
 
       {/* ── PROPRIEDADES ── */}
